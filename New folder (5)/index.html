@@ -2,34 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Interactive Navigation Menu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Weather App</h1>
-    </header>
-    <main>
-        <section id="weather-section">
-            <form id="location-form">
-                <input type="text" id="location-input" placeholder="Enter a location" required>
-                <button type="submit">Get Weather</button>
-            </form>
-            <button id="get-location">Use My Location</button>
-            <div id="weather-info">
-                <h2 id="location-name"></h2>
-                <p id="weather-description"></p>
-                <p id="temperature"></p>
-                <p id="humidity"></p>
-                <p id="wind-speed"></p>
-            </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <div class="content">
+        <section id="home">
+            <h1>Home</h1>
+            <p>Welcome to the home section.</p>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Weather App</p>
-    </footer>
-    <script src="script.js"></script>
+        <section id="about">
+            <h1>About</h1>
+            <p>Learn more about us.</p>
+        </section>
+        <section id="services">
+            <h1>Services</h1>
+            <p>Discover our services.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Get in touch with us.</p>
+            <p>if anything required contact us</p>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
